@@ -10,10 +10,10 @@ import io.cucumber.junit.CucumberOptions;
 	    features="./src/test/resources/features",
         glue="step_definitions",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
-        tags="@userManagement",
+        tags="",
         publish = true
 )
-public class TestRunner_CraterLogin {
+public class TestRunner {
 
 	
 }
