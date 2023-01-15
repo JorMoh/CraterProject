@@ -8,12 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		plugin = {"pretty", "html:Reports/htmlReport.html", "json:Reports/jsonReport.json"},
 	    features="./src/test/resources/features",
-        glue="step_definitions",
+        glue="step_definitions_UI",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
         tags="",
         publish = true
 )
-public class TestRunner {
+public class TestRunnerUI {
 
 	
 }
