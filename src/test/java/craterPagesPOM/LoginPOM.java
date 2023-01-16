@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.BrowserUtils;
 import utils.Driver;
 import utils.dataReader;
 
@@ -42,12 +43,19 @@ public class LoginPOM {
 	
 	//CRATER METHODS
 	  
-	  public static void craterLogin() {
+	  public static void craterLogin1() {
 		  LoginPOM login = new LoginPOM();
 		  login.userEmailField.sendKeys(dataReader.getData("craterValidUserEmail"));
 		  login.passwordField.sendKeys(dataReader.getData("craterValidPassword"));
 		  login.loginButton.click();
 	  }
+	  
+	  public void Craterlogin()  {
+			BrowserUtils utils = new BrowserUtils();
+			utils.sendKeysWithActionsClass(userEmailField, dataReader.getData("craterValidUserEmail"));
+			utils.sendKeysWithActionsClass(passwordField,dataReader .getData("craterValidPassword"));
+			loginButton.click();
+		}
 
 
 
