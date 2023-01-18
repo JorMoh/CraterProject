@@ -12,6 +12,13 @@ public class CommonPOM {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
+
+	@FindBy(xpath = "//a[contains(text(),'Customers')]")
+	public WebElement customersTab;
+	
+	@FindBy(xpath = "//button[text()= ' New Customer']")
+	public WebElement newCuStomerBtn;
+	
 	@FindBy(xpath = "//a[contains(text(),'Items')]")
 	public WebElement itemsTab;
 	
