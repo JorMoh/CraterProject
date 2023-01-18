@@ -9,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		plugin = {"pretty", "html:Reports/htmlReport.html", "json:Reports/jsonReport.json"},
 	    features="./src/test/resources/features",
-        glue="step_definitions_API",
+        glue="step_definitions_UI",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
-        tags="",
+        tags="@resetPassword",
         publish = true
 )
 
