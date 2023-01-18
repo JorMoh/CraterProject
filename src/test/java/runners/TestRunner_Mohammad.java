@@ -7,10 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:Reports/htmlReport.html", "json:Reports/jsonReport.json"},
-	    features="./src/test/resources/features",
-        glue="step_definitions_API",
+	    features="./src/test/resources/features/Mohammad's Features",
+        glue="step_definitions_UI",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
-        tags="",
+        tags="@AddCustomer",
         publish = true
 )
 public class TestRunner_Mohammad {
