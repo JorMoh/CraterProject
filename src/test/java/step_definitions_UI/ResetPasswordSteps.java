@@ -26,6 +26,21 @@ public class ResetPasswordSteps {
 	public void user_click_on_forget_password_link() {
 	    login.forgotPasswordLink.click();
 	}
+	
+	@Then("user should see textbox titled ‘Enter email*’.")
+	public void user_should_see_textbox_titled_enter_email() {
+	    Assert.assertTrue(reset.enterEmailField.isDisplayed());
+	}
+
+	@Then("button titled ‘Send Reset Link’.")
+	public void button_titled_send_reset_link() {
+	    Assert.assertTrue(reset.sendResetLinkBtn.isDisplayed());
+	}
+
+	@Then("link titled ‘Back to Login’.")
+	public void link_titled_back_to_login() {
+	    Assert.assertTrue(reset.backToLoginLink.isDisplayed());
+	}
 
 	@Then("user is on reset password page")
 	public void user_is_on_reset_password_page() {

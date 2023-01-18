@@ -1,15 +1,23 @@
 @Regression
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Reset Password Validation
   
   Background: 
+    Given user is on the login page
+    When user click on Forget Password? link
+    Then user is on reset password page
+  
+  
+
+  @resetPasswordComponents @resetPassword
+  Scenario: Reset Password Components
+    Then user should see textbox titled ‘Enter email*’.
+    And button titled ‘Send Reset Link’.
+    And link titled ‘Back to Login’. 
+ 
     
  
   @resetPasswordFunctionalityTest @resetPassword
   Scenario: user is able to enter email to reset password
-    Given user is on the login page
-    When user click on Forget Password? link
-    Then user is on reset password page
     When user enter email field with "hgdhhdhd" 
     Then user see the error message: “Incorrect Email”.
     When user clear email field 
