@@ -112,6 +112,8 @@ public class BrowserUtils {
 		element.sendKeys(Keys.DELETE);
 	}
 	
+	
+	
 	// random 3 digit number generator
 		public int randomNumber() {
 			Random rand = new Random();

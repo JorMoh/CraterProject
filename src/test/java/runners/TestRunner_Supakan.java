@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 	    features="./src/test/resources/features",
         glue="step_definitions_UI",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
-        tags="@resetPassword",
+        tags="@loginTests",
         publish = true
 )
 
