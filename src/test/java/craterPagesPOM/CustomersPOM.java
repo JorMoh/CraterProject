@@ -11,6 +11,7 @@ public class CustomersPOM {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
+	//ADD CUSTOMER
 	@FindBy(xpath = "//button[text()= ' New Customer']")
 	public WebElement addNewCustomerBtn;
 	
@@ -57,9 +58,9 @@ public class CustomersPOM {
 	@FindBy(xpath = "//p[text()='Customer created successfully']")
 	public WebElement successfulCustomerCreationMsgCloseBtn;
 	
+	//CUSTOMER INFO
 	@FindBy(xpath = "//h6[@class='flex items-center']")
 	public WebElement salesAndExpensesHeader;
-	
 	
 	@FindBy(xpath = "(//p[@class='text-sm font-bold leading-5 text-black non-italic'])[1]")
 	public WebElement customerPageDisplayName;
@@ -72,6 +73,59 @@ public class CustomersPOM {
 	
 	@FindBy(xpath = "(//p[@class='text-sm font-bold leading-5 text-black non-italic'])[5]")
 	public WebElement customerPagePhone;
+	
+	//EDIT CUSTOMER
+	@FindBy(xpath="(//button[@type='button'])[3]")
+    public WebElement threeDotsBtn;
+	
+	@FindBy(xpath="//a[text()=' Edit']")
+	public WebElement ItemEditBtn;
+	
+	@FindBy(xpath="//h3[text()='Edit Customer']")
+	public WebElement editCustomerHeader;
+	
+	@FindBy(xpath="//h6[text()='Basic Info']")
+	public WebElement editBasicInfoHeader;
+	
+	@FindBy(xpath="//div[text()='Display Name ']")
+	public WebElement editDisplayNameLabel;
+	
+	@FindBy(xpath="//div[text()='Email ']")
+	public WebElement editEmailLabel;
+	
+	@FindBy(xpath="//div[text()='Phone ']")
+	public WebElement editPhoneLabel;
+	
+	@FindBy(xpath="//div[text()='Primary Currency ']")
+	public WebElement editPrimaryCurrencyLabel;
+	
+	@FindBy(xpath="//h6[text()='Portal Access']")
+	public WebElement editPortalAccessHeader;
+	
+	@FindBy(xpath="//h6[text()='Billing Address']")
+	public WebElement billingAddressHeader;
+	
+	@FindBy(xpath="//div[text()='Name ']")
+	public WebElement billingAddressNameLabel;
+	
+	@FindBy(xpath="//div[text()='Country ']")
+	public WebElement billingAddressCountryLabel;
+	
+	@FindBy(xpath="//div[text()='State ']")
+	public WebElement billingAddressStateLabel;
+	
+	@FindBy(xpath="//div[text()='City ']")
+	public WebElement billingAddressCityLabel;
+	
+	@FindBy(xpath="//div[text()='Address ']")
+	public WebElement billingAddressStreet1Label;
+
+	@FindBy(xpath="//div[@class='flex items-center justify-end']")
+	public WebElement updateCustomerBtn;
+	
+	@FindBy(xpath = "//p[@class='text-sm leading-5 font-medium text-gray-900']")
+	public WebElement successfulCustomerUpdateMsg;
+	
 	
 	
 
