@@ -15,7 +15,7 @@ import io.cucumber.java.en.When;
 import utils.BrowserUtils;
 import utils.DButils;
 import utils.Driver;
-import utils.dataReader;
+
  
 public class AddNewCustomerTests {
 	String customerEmail = "JordanMo@yahoo.com";
@@ -25,12 +25,6 @@ public class AddNewCustomerTests {
 	BrowserUtils utils = new BrowserUtils();
 	DButils db = new DButils();
 
-
-	@Given("user is on the login page")
-	public void user_is_on_the_login_page() {
-		Driver.getDriver().get(dataReader.getData("craterUrl"));
-	    
-	}
 	
 	@Given("user logs in")
 	public void user_logs_in() {

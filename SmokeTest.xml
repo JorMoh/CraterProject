@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Crater-Regression">
+	<test name="regression">
+		<classes>
+		
+			<class name="step_definitions_UI.AddNewCustomerTests.java"></class>
+			<class name="step_definitions_UI.LoginValidationSteps.java"></class>
+			<class name="step_definitions_UI.EditCustomerTests.java"></class>
+			
+		</classes>
+	</test>
+</suite>

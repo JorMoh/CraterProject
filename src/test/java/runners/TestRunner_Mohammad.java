@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 	    features="./src/test/resources/features/Mohammad's Features",
         glue="step_definitions_UI",
         dryRun=false, //cucumber will only run scenario steps that haven't been implemented
-        tags="@AddCustomer",
+        tags="@EditCustomer",
         publish = true
 )
 public class TestRunner_Mohammad {
