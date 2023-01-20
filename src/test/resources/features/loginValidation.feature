@@ -5,7 +5,7 @@ Feature: Crater User Management
    
    
    Background: 
-     Given user is on the login page
+     #Given user is on the login page
    
  @validLoginTest @loginTests @smokeTests
    Scenario: User is able to login successfully

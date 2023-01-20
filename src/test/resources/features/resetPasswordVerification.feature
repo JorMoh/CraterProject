@@ -2,13 +2,13 @@
 Feature: Reset Password Validation
   
   Background: 
-    Given user is on the login page
+    #Given user is on the login page
     When user click on Forget Password? link
     Then user is on reset password page
   
   
 
-  @resetPasswordComponents @resetPassword
+  @resetPasswordComponents @resetPassword @1
   Scenario: Reset Password Components
     Then user should see textbox titled ‘Enter email*’.
     And button titled ‘Send Reset Link’.

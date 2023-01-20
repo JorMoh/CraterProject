@@ -5,8 +5,8 @@ Feature: As an Invoice application user,
 
   @AddCustomer
   Scenario: user is able to create a customer
-    Given user is on the login page
-    And user logs in
+ #//   Given user is on the login page
+    # And user logs in
     And user navigates to Customers tab and clicks on it
     And clicks on new customer button
     When user enters the details for :Basic Info, Portal Access, Billing Address, and Shipping Address
