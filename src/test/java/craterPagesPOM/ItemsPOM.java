@@ -83,5 +83,11 @@ public class ItemsPOM {
    @FindBy(xpath="//p[text()='Item deleted successfully']")
    public WebElement itemDeletedMsg;
    
+   @FindBy(xpath="//h3[text()='Items']")
+   public WebElement itemsHeader;
+   
+   @FindBy(xpath="//a[text()=' Edit']")
+   public WebElement ItemEditBtn;
+   
 		   
 }
