@@ -126,6 +126,29 @@ public class CustomersPOM {
 	@FindBy(xpath = "//p[@class='text-sm leading-5 font-medium text-gray-900']")
 	public WebElement successfulCustomerUpdateMsg;
 	
+	//DELET CUSTOMER
+	
+	@FindBy(xpath="//a[text()=' Delete']")
+	public WebElement customerDeleteBtn;
+	
+	@FindBy(xpath = "//p[@class='text-sm leading-5 font-medium text-gray-900']")
+	public WebElement successfulCustomerDeleteMsg;
+	
+	@FindBy(xpath="//button[text()='Cancel']")
+	public WebElement deleteOkButton;
+	
+	@FindBy(xpath="//button[text()='Ok']")
+	public WebElement deleteCancelButton;
+	
+	@FindBy(xpath="//h3[text()='Are you sure?']")
+	public WebElement modalTitle;
+	
+	@FindBy(xpath="//p[text()='You will not be able to recover this customer and"
+			+ " all the related Invoices, Estimates and Payments.']")
+	public WebElement modalMessage;
+	
+	
+	
 	
 	
 

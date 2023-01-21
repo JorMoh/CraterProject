@@ -65,8 +65,8 @@ public class ResetPasswordSteps {
 	@When("user clear email field")
 	public void user_clear_email_field() {
 		
-		utils.clearTextOfAFieldMac(reset.enterEmailField);
-	   
+		//utils.clearTextOfAFieldMac(reset.enterEmailField);
+		utils.clearTextOfTheFieldWindows(reset.enterEmailField);
 	}
 
 	@Then("user see the error message: “Field is required”.")

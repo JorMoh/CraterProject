@@ -1,0 +1,11 @@
+{
+    "name": "Mohammad1",
+    "email": "mmohaidat@gmail.com",
+    "password": "Supakan",
+    "companies": [
+        {
+            "id": "1",
+            "role": "vel"
+        }
+    ]
+}

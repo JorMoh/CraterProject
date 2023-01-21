@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Crater-API">
+	<test name="ApiTests">
+		<classes>
+			<class name="tests_API.IntegrateLogin"></class>
+			<class name="tests_API.IntegrateCreateCustomer"></class>
+			<class name="tests_API.IntegrateUpdateCustomer"></class>
+			<class name="tests_API.IntegrateLogout"></class>
+		</classes>
+	</test>
+</suite>

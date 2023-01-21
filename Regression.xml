@@ -2,12 +2,13 @@
 <suite name="Crater-Regression">
 	<test name="regression">
 		<classes>
-		
-			<class name="step_definitions_UI.AddNewCustomerTests.java"></class>
-			<class name="step_definitions_UI.LoginValidationSteps.java"></class>
-			<class name="step_definitions_UI.ResetPasswordSteps.java"></class>
-			<class name="step_definitions_UI.LoginValidationSteps.java"></class>
-
+			<class name="step_definitions_UI.LoginValidationSteps"></class>
+			<class name="step_definitions_UI.ResetPasswordSteps"></class>
+			<class name="step_definitions_UI.AddNewCustomerTests"></class>
+			<class name="step_definitions_UI.EditCustomerTests"></class>
+			<class name="step_definitions_UI.DeleteCustomerTests"></class>
+			<class name="step_definitions_UI.AddNewItem_successfully"></class>
+			<class name="step_definitions_UI.EditItem"></class>
 		</classes>
 	</test>
 </suite>

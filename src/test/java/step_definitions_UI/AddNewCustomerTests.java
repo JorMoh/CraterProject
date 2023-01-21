@@ -59,7 +59,7 @@ public class AddNewCustomerTests {
 	
 	@When("user clicks on the Save Customer button.")
 	public void user_clicks_on_the_save_customer_button() {
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(),5);
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(),7);
         wait.until(ExpectedConditions.elementToBeClickable(customer.saveCustomerBtn));
 		 customer.saveCustomerBtn.click();
 	}

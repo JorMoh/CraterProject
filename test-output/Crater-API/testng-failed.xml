@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Crater-API]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ApiTests(failed)">
+    <classes>
+      <class name="tests_API.IntegrateCreateCustomer">
+        <methods>
+          <include name="verifyStatusCode"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests_API.IntegrateCreateCustomer -->
+      <class name="tests_API.IntegrateLogout">
+        <methods>
+          <include name="verifyLogout"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests_API.IntegrateLogout -->
+    </classes>
+  </test> <!-- ApiTests(failed) -->
+</suite> <!-- Failed suite [Crater-API] -->
