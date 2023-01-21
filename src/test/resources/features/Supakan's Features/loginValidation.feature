@@ -7,7 +7,7 @@ Feature: Crater User Management
    Background: 
      Given user is on the login page
    
- @validLoginTest @loginTests @smokeTests
+ @validLoginTest @loginTests @smokeTest
    Scenario: User is able to login successfully
      When  user enter valid "mochana24@gmail.com" and "Test1234"
      And   clicks on the login button

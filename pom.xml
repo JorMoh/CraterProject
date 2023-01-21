@@ -88,7 +88,7 @@
 	
 	<profiles>
 		<profile>
-			<id>Regression</id>
+			<id>crater-Smoke</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -97,7 +97,7 @@
 						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>Regression.xml</suiteXmlFile>
+								<suiteXmlFile>SmokeTest.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
